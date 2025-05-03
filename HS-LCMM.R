@@ -213,7 +213,7 @@ combined_gradient_function <- function(params) {
 
 parameters_DHLCMM <- maxLik(logLik = combined_log_likelihood, 
                             start = initial_guess_combined, 
-                            method = "BFGSR",
+                            method = "BFGS",
                             grad = combined_gradient_function,
                             control = list(printLevel = 1, tol = 1e-4, gradtol=1e-4),
                             fixed = fixed_params)
