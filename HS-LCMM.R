@@ -117,9 +117,12 @@ log_likelihood_probit <- function(params_probit) {
   eta <- X %*% params_probit
   p <- pnorm(eta)  # Probit link function
   y <- pdata$snp
-  log_likelihood <- sum(y * log(p) + (1 - y) * log(1 - p))
+  # standard probit log‐likelihood
+  ll_p <- sum(y*log(p) + (1-y)*log(1-p))
+  # add latent‐utility density term
+  ll_d <- sum(y * log(dnorm(eta)))
+  return(ll_p + ll_d)
   
-  return(log_likelihood)
 }
 
 
