@@ -13,4 +13,4 @@ This is the base code of the article "Modeling New Product Adoption: A Hurdle St
    Users who prefer a semi‑parametric specification can simply switch from `hlme()` to `lcmm()`. All other pieces of the workflow remain unchanged.
 
 4. **Tip for large time variables**  
-   When the time index is a large integer (e.g., measured in seconds, minutes, or age), nonlinear terms in `lcmm()` may become numerically unstable. In practice, rescaling the time variable—dividing by 10 to 100—improves convergence and guards against sudden crashes without affecting the substantive interpretation of coefficients. 
+   When the time index is a large integer (e.g., measured in seconds, minutes, or age), nonlinear terms in `lcmm()` or `hlme()`may become numerically unstable. In practice, rescaling the time variable—dividing by 10 to 100—improves convergence and guards against sudden crashes without affecting the substantive interpretation of coefficients. 
