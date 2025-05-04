@@ -1,5 +1,5 @@
 # Hurdle Structure Latent Class Mixed Model (HS-LCMM)
-This is the base code of the article "Modeling New Product Adoption: A Hurdle Structure Latent Class Mixed Model Applied to Plant-Based Meat Alternatives". We follow: "https://github.com/CecileProust-Lima/lcmm" for the Second Hurdle part. It is a very flexible model and has room for customization.
+This is the base code of the article "Modeling New Product Adoption: A Hurdle Structure Latent Class Mixed Model Applied to Plant-Based Meat Alternatives". We follow: "https://github.com/CecileProust-Lima/lcmm" for the Second Hurdle part. It is a very flexible model and has room for customization. **Please cite the article if you follow the HS-LCMM code.** 
    
 1. **Second‑hurdle estimation**  
    The implementation follows the methodology of the **LCMM** R package, using its `hlme()` function by default for the second‑hurdle mixed model.
